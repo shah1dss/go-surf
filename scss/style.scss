@@ -17,17 +17,14 @@
         top:0;
         left: 0;
         z-index: 5;
-        color: #FFFFFF;
         border-right: 1px solid rgba($color: #fff, $alpha: .25);
         height: 100vh;
         text-align: center;
     }
     &__title{
-        text-transform: uppercase;
         font-weight: 800;
         font-size: 200px;
         line-height: 156px;
-        color:#fff;
         opacity: 0.07;
         max-width: 467px;
         position: absolute;
@@ -59,6 +56,7 @@
         letter-spacing: 1.05px;
         position: relative;
         padding-left: 19px;
+        text-transform:capitalize;
         &::before{
             content: "";
             position: absolute;
@@ -92,8 +90,6 @@
         right: 80px;
         bottom: 116px;
         text-align: right;
-        color: #FFFFFF;
-        text-transform: uppercase;
         &-subtitle{
             margin-bottom: 5px;
         }
@@ -131,7 +127,6 @@
     bottom: 36px;
     max-width: 920px;
     width: 100%;
-    color: #fff;
     .slick-current{
         .dots-box{
             border-top:4px solid $green;
@@ -154,12 +149,14 @@
     &__name{
         font-weight: 300;
         line-height: 19px;
+        text-transform:capitalize;
     }
 }
 
 .menu{
     padding-top: 40px;
     span{
+        text-transform:capitalize;
         font-weight: 500;
         display: block;
         font-size: 12px;
@@ -169,6 +166,34 @@
         margin-bottom: 20px;
     }            
 }
+.header__arrow-down{
+    position: absolute;
+    bottom: 41px;
+    left: 215px;
+    z-index: 1;
+}
+.line-animation{
+    stroke-dashoffset: 600;
+    stroke-dasharray: 600;
+    animation: animdash 5s infinite 6s;
+}
+@keyframes animdash{
+    to{
+        stroke-dashoffset: 0; 
+    }
+}
 
+.surf{
+    padding: 160px 0 210px;
+    background-image: url(../images/surf-bg.png);
+    background-position: top 200;
+    background-size: auto;
+    background-repeat: no-repeat;
+    &__subtitle{
+        text-align: right;
+        padding-right: 80px;
+        margin-top: -86px;
+    }
+}
 
 @import "media";
