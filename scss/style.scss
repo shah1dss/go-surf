@@ -186,7 +186,7 @@
 .surf{
     padding: 160px 0 210px;
     background-image: url(../images/surf-bg.png);
-    background-position: top 200;
+    background-position: right 200px;
     background-size: auto;
     background-repeat: no-repeat;
     &__subtitle{
@@ -194,6 +194,53 @@
         padding-right: 80px;
         margin-top: -86px;
     }
+    &-slider{
+        padding-top: 110px;
+        .slider-arrows{
+            top: 50px;
+            opacity: .25;
+        }
+    }
+    &-box{
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;    
+        &__inner{
+            min-height: 750px;
+            background-color: rgba($color:  #1C2121, $alpha: 0.85);
+            position: relative;
+            &-title{
+                width: 140px;
+                padding: 72px 0 0 42px;
+                font-weight: 800;
+                font-size: 40px;
+                line-height: 36px;
+            }
+            &-location{
+                font-size: 18px;
+                line-height: 22px;
+                letter-spacing: 8px;
+                transform: rotate(-90deg);
+                position: absolute;
+                left: 40px;
+                bottom: 80px;
+                height: 0; 
+                width: 0;
+                white-space: nowrap;
+                span{
+                    font-weight: 100;
+                }
+            }
+            &-btn{
+                position: absolute;
+                bottom: 0;
+                text-align: center;
+                left: 0;
+                right: 0;
+            }
+        }
+    }
 }
+
 
 @import "media";

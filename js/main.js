@@ -13,4 +13,11 @@ $(function(){
         asNavFor: '.header__slider',
     });
 
+    $('.surf-slider').slick({
+        prevArrow: '<img class="slider-arrows slider-arrows__left" src="images/arrows-left.svg" alt="arrows-right">',
+        nextArrow: '<img class="slider-arrows slider-arrows__right" src="images/arrows-right.svg" alt="arrows-left">',
+        slidesToShow: 4,
+        slidesToScroll: 1,
+    });
+
 });
