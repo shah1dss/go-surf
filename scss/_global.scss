@@ -139,11 +139,13 @@ ul,li{
         }
     }
 }
-.surf{
+.surf, 
+.holder{
     padding: 160px 0 120px;
 }
-.travel{
+.holder{
     padding-bottom: 265px;
+    margin-bottom: 35px;
 }
 .description{
     display: inline-block;
@@ -154,5 +156,12 @@ ul,li{
         span{
             font-weight: 100;
         }
+    }
+}
+
+.star-list{
+    li{
+        display: inline-block;
+        margin-left: -25px;
     }
 }
