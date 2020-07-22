@@ -155,6 +155,20 @@
 }
 
 .menu{
+    &-btn{
+        width: 40px;
+        position: absolute;
+        z-index: 20;
+        right: 20px;
+        top: 87px;
+        cursor: pointer;
+        display: none;
+        &__line{  
+            height: 3px;
+            margin-bottom: 5px;    
+            background-color: $green;
+        }
+    }
     padding-top: 40px;
     span{
         text-transform:capitalize;
@@ -165,7 +179,7 @@
         letter-spacing: 3px;
         padding-top: 6px;
         margin-bottom: 20px;
-    }            
+    }         
 }
 .header__arrow-down{
     position: absolute;
